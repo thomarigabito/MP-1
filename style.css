@@ -214,14 +214,14 @@ footer{
     .block1 #title {
             font-size: 45px;
         }
-    .model-container {
+    .model-grid {
         grid-template-columns: 1fr;
     }
     .footer-grid {
-        display: grid;
         grid-template-columns: 1fr;
-        
-
+    }
+    .grid-developer{
+        grid-template-columns: 1fr;
     }
 
    
