@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Gabarito;
+    box-sizing: border-box;
+}
+
+
+.housemodel{
+    position: relative;
+    min-height: fit-content;
+    min-width: 100%;
+    background-color: antiquewhite;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;    
+}
+
+.housemodel .border1{
+    padding: 20px;
+    border-top: solid 1px;
+}
+
+.housemodel .developer{
+    padding:10px;
+    background-color: #16697A;
+    margin-bottom: 10px;
+}
+
+.housemodel .model{
+    display: flex;
+    flex-grow: 1;  
+}
+.model1 .cards{
+    padding-bottom: 10px;
+}
+.cards .cards{
+    padding: 5px;
+    width: 400px;
+}
+
+.cards img:hover {
+    margin: 10px auto;
+    transition: all 0.5s;
+    height: 300px;
+    z-index: 1;
+}
+.cards .card-body:hover{
+    text-align: center;
+}
+
+
+.cont-carousels {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 95vh;
+    padding: 30px;
+    background-image: url('img/family2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.carousels {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: inline;
+}
+
+.carousels .carousels1{
+    margin: 0 auto;
+   
+}
+
+.carousels .carousels1 img {
+    margin: 0 auto;
+    
+}
+.section1 {
+    display: block;
+    position: relative;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .block1 .intro{
+    color:white;
+}
+.section1 .block1 .intro .text1{
+    color: white;
+}
