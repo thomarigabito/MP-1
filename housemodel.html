@@ -17,56 +17,41 @@
         href="https://fonts.googleapis.com/css2?family=Gabarito&family=Irish+Grover&family=Lato:ital,wght@0,400;1,300&family=Mouse+Memoirs&family=Pacifico&family=Pixelify+Sans&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    
     
     <title>Document</title>
 </head>
 
 <body>
-
-    <nav class="col">
-
-        <div class="mbar">
-            <i class="fa-solid fa-bars"></i>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown btn btn-sm btn-outline-secondary m-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Explore</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Developer</a></li>
+                            <li><a class="dropdown-item" href="housemodel.html">House Model</a></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item btn btn-outline-secondary btn-sm m-1">
+                        <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#myIquire">Inquire now</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-secondary btn-sm m-1">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myRegform">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="logoname">
-            <h1>Home Opportunity</h1>
-        </div>
-    
-        <div class="menu">
-            <div class="dropdown">
-                <button type="button" class="btn btn-sm dropbtn"><a href="index.html">Home</a></button>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-sm dropbtn">About</button>
-                <div class="dropdown-content">
-                    <a href="#">HOUSE</a>
-                    <a href="#">LOT</a>
-                    <a href="#">HOUSE & LOT</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-sm dropbtn">Model House</button>
-                <div class="dropdown-content">
-                    <a href="#">SINGLE</a>
-                    <a href="#">ROW HOUSE</a>
-                    <a href="#">BUNGALOW</a>
-                </div>
-            </div>
-    
-            <div class="dropdown">
-                <button type="button" class="btn btn-sm dropbtn" data-bs-toggle="modal" data-bs-target="#myIquire">Inquire
-                    Now</button>
-            </div>
-    
-            <div class="dropdown">
-                <button type="button" class="btn btn-primary dropbtn" data-bs-toggle="modal" data-bs-target="#myRegform">
-                    Sign Up
-                </button>
-            </div>
     </nav>
+    
 
     <div class="modal" id="myRegform">
         <div class="modal-dialog">
@@ -231,125 +216,53 @@
         </div>
     </div>
 
-        <div class="container-fluid cont-carousels">
-            <section class="col section1">
-                <div class="carousels">
-                    <div class="w3-content w3-section carousels1" >
-                        <img class="mySlides" src="img/e279c8a3cb5ec960a22e14228e7ff214.jpg">
-                        <img class="mySlides" src="img/192295b3136ae7a49827ceabfbcbf1ca.jpg">
-                    </div>
-                </div>
-                <div class="block1">
-                    <article class="intro">
-                        <div>
-                            <h1 id="title">Welcome to Your Gateway to Exceptional Real Estate</h1>
-                        </div>
-                        <div>
-                            <p id="sub" >Unlock Your Dream Home Today</p>
-                        </div>
-                        <div class="row">
-                            <div>
-                                <p class="text1">We believe that a home is not just a place; it's a reflection of your aspirations.</p>
-                            </div>
-                    </article>
-                </div>
-            </section>
-        </div>
-
 
 
  <!-------------AMAIA ESCAPE----------------->
         
     <div class="container housemodel">
-        <div class="border1">
-            <div class="developer"> 
+            <div class="developer">
                 <h1>Amaia Escape</h1>
             </div>
+        <div class="amaia-grid">
 
-            <div class="container-fluid model">
-                    <div class="col cards">
-                        <div class="card cards">
-                            <img class="card-img-top" src="Model House/Amaia Escape/model1.jpg" alt="Card image">
-                            <div class="card-body">
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myIquire">Book now</a>
-                            </div>
-                        </div>
+                <div class="card">
+                    <img class="card-img-top card-model" src="Model House/Amaia Escape/model1.jpg" alt="Card image"
+                        style="height: 250px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Model House 1</h4>
+                
+                        <p class="card-text">Subdivision: Amaia Escape</p>
+                        <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myIquire">Book
+                            now</a>
                     </div>
-                    <div class="col">
-                        <h1>Model 1</h1>
-                        <p> <i class="fa-solid fa-house"></i> Floor Area: 100sqmt</p>
-                        <p> <i class="fa-solid fa-bed" ></i> 1 Bedroom</p>
-                        <p> <i class="fa-solid fa-toilet"></i> 1 Restroom</p>
-                        <h2>Description</h2>
-                    </div>
-            </div>
-        </div>
-            
-        <div class="border1">
-            <div class="container-fluid model">
-                    <div class="col">
-                        <h1>Model 2</h1>
-                        <p> <i class="fa-solid fa-house"></i>Floor Area: 150sqmt</p>
-                        <p> <i class="fa-solid fa-bed"></i>1 Bedroom:</p>
-                        <p> <i class="fa-solid fa-toilet"></i>1 Restroom:</p>
-                        <h2>Description</h2>
-                    </div>
-                    <div class="col cards">
-                        <div class="card cards">
-                            <img class="card-img-top" src="Model House/Amaia Escape/model2.jpg" alt="Card image">
-                            <div class="card-body">
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myIquire">Book now</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-            </div>
-        </div>
-
-        <div class="border1">
-            <div class="container-fluid model">
-                <div class="col cards">
-                    <div class="card cards">
-                        <img class="card-img-top" src="Model House/Amaia Escape/model3.jpg" alt="Card image">
-                        <div class="card-body">
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <h1>Model 3</h1>
-                    <p> <i class="fa-solid fa-house"></i>Floor Area: 150sqmt</p>
-                    <p> <i class="fa-solid fa-bed"></i>1 Bedroom:</p>
-                    <p> <i class="fa-solid fa-toilet"></i>1 Restroom:</p>
-                    <h2>Description:</h2>
                 </div>
                 
-            </div>
-        </div>
-
-        <div class="border1">
-            <div class="container-fluid model">
-
-                <div class="col">
-                    <h1>Model 4</h1>
-                    <p> <i class="fa-solid fa-house"></i>Floor Area: 150sqmt</p>
-                    <p> <i class="fa-solid fa-bed"></i>1 Bedroom:</p>
-                    <p> <i class="fa-solid fa-toilet"></i>1 Restroom:</p>
-                    <h2>Description</h2>
-                </div>
-    
-                <div class="col cards">
-                    <div class="card cards">
-                        <img class="card-img-top" src="Model House/Amaia Escape/model4.jpg" alt="Card image">
-                        <div class="card-body">
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myIquire">Book now</a>
-                        </div>
+                <div class="card">
+                    <img class="card-img-top card-model" src="Model House/Amaia Escape/model2.jpg" alt="Card image"
+                        style="height: 250px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Model House 2</h4>
+                        <p class="card-text">Subdivision: Amaia Escape</p>
+                        <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myIquire">Book
+                            now</a>
                     </div>
                 </div>
-            </div>
+                
+                <div class="card">
+                    <img class="card-img-top card-model" src="Model House/Amaia Escape/model3.jpg" alt="Card image"
+                        style="height: 250px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Model House 3</h4>
+                        <p class="card-text">Some example text.</p>
+                        <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myIquire">Book
+                            now</a>
+                    </div>
+                </div>
+
         </div>
-    </div>
+            
+      
 
 <!------------CALMAR HOMES------------------->
     <div id="calmar" class="container housemodel">

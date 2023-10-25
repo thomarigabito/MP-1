@@ -4,9 +4,11 @@
     font-family: Gabarito;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 
-
-.housemodel{
+.housemodel {
     position: relative;
     min-height: fit-content;
     min-width: 100%;
@@ -14,40 +16,25 @@
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;    
+    gap: 2em;
 }
+.amaia-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    
+}
+.card-img{
+    width: 600px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
 
 .housemodel .border1{
     padding: 20px;
     border-top: solid 1px;
-}
-
-.housemodel .developer{
-    padding:10px;
-    background-color: #16697A;
-    margin-bottom: 10px;
-}
-
-.housemodel .model{
-    display: flex;
-    flex-grow: 1;  
-}
-.model1 .cards{
-    padding-bottom: 10px;
-}
-.cards .cards{
-    padding: 5px;
-    width: 400px;
-}
-
-.cards img:hover {
-    margin: 10px auto;
-    transition: all 0.5s;
-    height: 300px;
-    z-index: 1;
-}
-.cards .card-body:hover{
-    text-align: center;
 }
 
 
