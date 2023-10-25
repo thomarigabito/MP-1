@@ -154,9 +154,6 @@ img{
     text-align: center;
 }
 
-.model-container{
-    
-}
 
 .model-grid {
     display: grid;
@@ -167,8 +164,22 @@ img{
     text-align: center;
     padding: 5px;
 }
-.card-body a:hover{
-    margin: 5px;
+.card-model{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 25% 0 25%;
+    box-shadow: 10px 10px 15px 0 grey;
+    transition: 200ms;
+}
+.card-body a:hover .card-model{
+    border: solid 1px;
+    color:#000000;
+    
+}
+.card-model:hover{
+    
+    transform: translate(0, -50px);
 }
 
 
@@ -205,8 +216,6 @@ footer{
 }
 
 
-
-
 @media only screen and (max-width: 768px) {
     .home .dream {
             font-size: 25px;
@@ -224,7 +233,25 @@ footer{
         grid-template-columns: 1fr;
     }
 
-   
+    .footer-grid dl dd{
+        display:none
+    }
+
+    .footer-grid dl dt:hover dd{
+        cursor: pointer;
+        display: block;
+    }
+    .social {
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+    .social a{
+        font-size: 25px;
+        padding: 0 20px 0 20px
+    }
+
 }
 @media only screen and (max-width: 500px) {
     .home .dream {
