@@ -69,7 +69,7 @@ img{
 
 
 .cont-carousel {
-    height: 90vh;
+    height: 100vh;
     padding: 30px;
     background-color: rgba(221, 222, 211, 0.293);
 }
@@ -120,11 +120,12 @@ img{
 
 /* Developer */
 .dev-container{
-    border: solid black 2px;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    display: block;
     max-width: 100rem;
+    height: 95vh;
     background-color: rgba(221, 222, 211, 0.293);
+    align-items: center;
+    justify-content: center;
 }
 
 .heading h1{
@@ -139,7 +140,7 @@ img{
 .grid-developer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
 }
 .developer{
     align-items: center;
@@ -158,9 +159,6 @@ img{
 
 /* MODEL HOUSE */
 .mod-container{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    margin: 100px auto;
     background-color: rgba(221, 222, 211, 0.293);
 }
 
