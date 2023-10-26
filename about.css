@@ -64,3 +64,26 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: .75rem;
 }
+
+
+@media only screen and (max-width: 768px){
+    .amaia-grid{
+    grid-template-columns: 1fr 1fr;
+    }
+    .calmar-grid{
+    grid-template-columns: 1fr 1fr
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .amaia-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem
+    }
+
+    .calmar-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem
+    }
+}
+

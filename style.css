@@ -213,7 +213,6 @@ img{
 }
 .card{
     width: 100%;
-    aspect-ratio: 1/1;
     text-align: center;
     padding: 5px;
     border-radius: 0 0 2% 5%;
@@ -315,8 +314,11 @@ footer{
     .block1 #title {
             font-size: 45px;
         }
+    .mod-container{
+        height: fit-content;
+    }
     .model-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .footer-grid {
         grid-template-columns: 1fr;
@@ -344,8 +346,26 @@ footer{
         padding: 0 20px 0 20px
     }
 
+
 }
 @media only screen and (max-width: 500px) {
+    .container1{
+        height: fit-content;
+    }
+    .cont-carousel{
+        height: fit-content;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .mod-container {
+        height: fit-content;
+    }
+    .dev-container{
+        height: fit-content;
+    }
+    .model-grid {
+        grid-template-columns: 1fr;
+    }
     .home .dream {
         font-size: 20px;
         }
