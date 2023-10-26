@@ -8,15 +8,16 @@ img{
     max-width: 100%;
 }
 
-.housemodel {
+.house-model {
     position: relative;
     min-height: fit-content;
     min-width: 100%;
     background-color: antiquewhite;
-    padding: 20px;
     justify-content: space-between;
     align-items: center;
     gap: 2em;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .amaia-grid{
     display: grid;
