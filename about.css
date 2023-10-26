@@ -21,7 +21,7 @@ img{
 .amaia-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: .75rem;
+    grid-gap: .75rem;
     
 }
 .card-img{
@@ -32,14 +32,6 @@ img{
 .card-body{
     padding:0;
 }
-
-
-
-.housemodel .border1{
-    padding: 20px;
-    border-top: solid 1px;
-}
-
 
 .cont-carousels {
     justify-content: center;
@@ -53,33 +45,8 @@ img{
     background-attachment: fixed;
 }
 
-.carousels {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-    display: inline;
-}
-
-.carousels .carousels1{
-    margin: 0 auto;
-   
-}
-
-.carousels .carousels1 img {
-    margin: 0 auto;
-    
-}
-.section1 {
-    display: block;
-    position: relative;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-}
-.section1 .block1 .intro{
-    color:white;
-}
-.section1 .block1 .intro .text1{
-    color: white;
+.calmar-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .75rem;
 }

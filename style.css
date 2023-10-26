@@ -216,6 +216,7 @@ img{
     aspect-ratio: 1/1;
     text-align: center;
     padding: 5px;
+    border-radius: 0 0 2% 5%;
 }
 .card-model{
     width: 100%;
