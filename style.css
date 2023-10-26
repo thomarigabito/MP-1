@@ -264,6 +264,7 @@ img{
     transform: translate(0, -50px);
     transition: 200ms ease-in;
     width: 1000px;
+    border-radius: 0;
 }
 
 
