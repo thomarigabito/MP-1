@@ -12,7 +12,7 @@ img{
     position: relative;
     min-height: fit-content;
     min-width: 100%;
-    background-color: antiquewhite;
+    background-color: rgba(219, 219, 211, 0.282);
     justify-content: space-between;
     align-items: center;
     gap: 2em;
