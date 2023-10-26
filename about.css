@@ -21,13 +21,16 @@ img{
 .amaia-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: .75rem;
     
 }
 .card-img{
     width: 600px;
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+.card-body{
+    padding:0;
 }
 
 
