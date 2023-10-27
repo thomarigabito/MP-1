@@ -178,6 +178,10 @@ img{
     gap: 1rem;
     padding: 20px;
     justify-content: center;
+    
+}
+.grid-dev-logo{
+    margin: 0 auto;
 }
 .developer{
     position: relative;
