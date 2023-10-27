@@ -174,11 +174,41 @@ img{
 .grid-developer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top:3rem;
     gap: 1rem;
+    padding: 20px;
+    justify-content: center;
 }
 .developer{
+    position: relative;
     align-items: center;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.015);
+    border: none;
+}
+.developer::before{
+    content: '';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(245, 245, 220, 0.593);
+    z-index: -1;
+    transition: transform 500ms ease-in-out;
+    transform: scaleX(0);
+    /* transform-origin: left; */
+}
+.developer:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(150, 150, 138, 0.726);
+    z-index: -1;
+    transform: scaleX(1);
 }
 .developer h1{
    font-size: 35px;
@@ -219,7 +249,8 @@ img{
 }
 .card-model{
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 100px;
+    /* aspect-ratio: 1/1; */
     object-fit: cover;
     border-radius: 25% 0 25%;
     box-shadow: 10px 10px 15px 0 grey;
