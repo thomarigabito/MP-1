@@ -6,11 +6,14 @@
 }
 
 body{
-    background-color: rgba(219, 219, 211, 0.282);
+
 }
 
 img{
     max-width: 100%;
+}
+hr{
+    border-top: 1px solid rgb(0, 0, 0);
 }
 
 .navbar{
@@ -103,9 +106,10 @@ img{
 
 
 .cont-carousel {
+    margin: 20px;
     height: 100vh;
     padding: 30px;
-    background-color: rgba(221, 222, 211, 0.293);
+    /* background-color: rgba(221, 222, 211, 0.293); */
 }
 .carousel {
     justify-content: center;
@@ -157,11 +161,16 @@ img{
     display: block;
     max-width: 100rem;
     height: 95vh;
-    background-color: rgba(221, 222, 211, 0.293);
+    /* background-color: rgba(221, 222, 211, 0.293); */
     align-items: center;
     justify-content: center;
 }
-
+.heading{
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 3rem;
+}
 .heading h1{
     text-align: center;
     font-size: 45px;
@@ -227,8 +236,8 @@ img{
 
 /* MODEL HOUSE */
 .mod-container{
-    background-color: rgba(221, 222, 211, 0.293);
-    height: 90vh;
+    /* background-color: rgba(221, 222, 211, 0.293); */
+    height: fit-content;
 }
 
 .mdlhouse{
@@ -259,6 +268,17 @@ img{
     border-radius: 25% 0 25%;
     box-shadow: 10px 10px 15px 0 grey;
     transition: 500ms ease-in-out;
+    position: relative;
+}
+.card-model::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top);
+
 }
 .card-body{
     display: block;
@@ -267,9 +287,7 @@ img{
     background-color: #16697a56;
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
-    border-radius: 0 20% 0 20% ;
-
-    
+    border-radius: 0 20% 0 20% ;  
 }
 .card-body .btn{
     position: relative;
