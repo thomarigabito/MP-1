@@ -5,15 +5,14 @@
     font-family: Mouse Memoir;
 }
 
-body{
-
-}
 
 img{
     max-width: 100%;
 }
 hr{
+    margin: 0 auto;
     border-top: 1px solid rgb(0, 0, 0);
+    width: 95%;
 }
 
 .navbar{
@@ -160,7 +159,7 @@ hr{
 .dev-container{
     display: block;
     max-width: 100rem;
-    height: 95vh;
+    height: 80vh;
     /* background-color: rgba(221, 222, 211, 0.293); */
     align-items: center;
     justify-content: center;
@@ -191,6 +190,12 @@ hr{
 }
 .grid-dev-logo{
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+    gap: 1rem;
+    padding: 20px;
+    justify-content: center;
 }
 .developer{
     position: relative;
@@ -360,6 +365,12 @@ footer{
 }
 
 
+@media only screen and (max-width: 1080px){
+    .grid-dev-logo{
+        margin: 0
+        }
+}
+
 @media only screen and (max-width: 768px) {
     .home .dream {
             font-size: 25px;
@@ -377,7 +388,16 @@ footer{
         grid-template-columns: 1fr;
     }
     .grid-developer{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;   
+        margin: 0;
+    }
+    .grid-dev-logo img{
+        width: 400px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .dev-container{
+        height: fit-content;
     }
 
     .footer-grid dl dd{
@@ -415,6 +435,10 @@ footer{
     }
     .dev-container{
         height: fit-content;
+    }
+    .grid-dev-logo {
+       grid-template-columns: 1fr;
+       margin: 0;
     }
     .model-grid {
         grid-template-columns: 1fr;
