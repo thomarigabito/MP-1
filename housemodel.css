@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Gabarito;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+
+.house-model {
+    position: relative;
+    min-height: fit-content;
+    min-width: 100%;
+    background-color: rgba(219, 219, 211, 0.282);
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.house-model .developer-name{
+    text-align: center;
+    padding: 3rem;
+    
+}
+.house-model .developer-name h1{
+    display: inline;
+    color:teal;
+    background-color: rgb(240, 176, 122);
+
+    padding: 10px;
+}
+
+.amaia-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .75rem;
+    
+}
+.card-img{
+    width: 600px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.card-body{
+    padding:0;
+}
+
+.cont-carousels {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 95vh;
+    padding: 30px;
+    background-image: url('img/family2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.calmar-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .75rem;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-rows: repeat(5, .75fr);
+    grid-template-areas: 
+            'menu mdl1 mdl1'
+            'menu mdl2 mdl2'
+            'menu mdl3 mdl3'
+            'menu mdl4 mdl4';
+    grid-gap: 1.5rem;
+}
+.menu{
+    grid-area: menu;
+    background-color: aqua;
+}
+.mdl1{
+    grid-area: mdl1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mdl2 {
+    grid-area: mdl2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mdl3 {
+    grid-area: mdl3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mdl4 {
+    grid-area: mdl4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .amaia-grid{
+    grid-template-columns: 1fr 1fr;
+    }
+    .calmar-grid{
+    grid-template-columns: 1fr 1fr
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .amaia-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem
+    }
+
+    .calmar-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem
+    }
+}
+
