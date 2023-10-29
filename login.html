@@ -10,12 +10,177 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="log.css">
-    <link rel="stylesheet" href="style.css">
+   
     <title>Document</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Mouse+Memoirs&family=Pixelify+Sans&display=swap"
         rel="stylesheet">
+
+    <style>
+        *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+    body::before{
+    position: fixed;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:beige;
+    z-index: -1;
+    opacity: .20;
+    background-image: url(img/vintage.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    object-fit: cover;
+
+}  
+    img{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: auto;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .form-container{
+        margin: 0 auto;
+    }
+    .form-details{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+
+
+
+    .form-container {
+        width: 400px;
+        height: 500px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+
+    .title {
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin: 10px 0 30px 0;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 15px;
+
+    }
+
+    .input {
+        border-radius: 20px;
+        border: 1px solid #c0c0c0;
+        outline: 0 !important;
+        box-sizing: border-box;
+        padding: 12px 15px;
+    }
+
+    .page-link {
+        text-decoration: underline;
+        margin: 0;
+        text-align: end;
+        color: #747474;
+        text-decoration-color: #747474;
+    }
+
+    .page-link-label {
+        cursor: pointer;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+    }
+
+    .page-link-label:hover {
+        color: #000;
+    }
+
+    .form-btn {
+        padding: 10px 15px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        border-radius: 20px;
+        border: 0 !important;
+        outline: 0 !important;
+        background: teal;
+        color: white;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .form-btn:active {
+        box-shadow: none;
+    }
+
+    .sign-up-label {
+        margin: 0;
+        font-size: 10px;
+        color: #747474;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .sign-up-link {
+        margin-left: 1px;
+        font-size: 11px;
+        text-decoration: underline;
+        text-decoration-color: teal;
+        color: teal;
+        cursor: pointer;
+        font-weight: 800;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+        @media only screen and (max-width: 768px){
+    *{
+        margin: 10px
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form-content-login{
+        height: fit-content;
+        border-radius: 0;
+        border: #717171 2px solid;
+        padding: 1rem;
+        width: 100%;
+
+    }
+
+}
+    </style>
 
 </head>
 <body>
@@ -24,29 +189,22 @@
 
                     <div class=" form-details">
                        <a href="index.html"> <img class="img" src="img/Hom.png"></a>
-
-                        <h2>Welcome back</h2>
                         <p>Please log in using your personal account</p>
                     </div>
 
-                    <div class="form-content-login">
-                        <h1>Login</h1>
-                        <form action="#">
-                            <div class="input-field">
-                                <input type="text"  required>
-                                <label class="form-label">Email</label>
-                            </div>
-                            <div class="input-field">
-                                <input type="password"  required>
-                                <label class="form-label" >Password</label>
-                            </div>
-                            <a href="#" class="forgot-pass-link">forget password</a>
-                            <button type="submit">login</button>
+                    <div class="form-container">
+                        <p class="title">Welcome back</p>
+                        <form class="form">
+                            <input type="email" class="input" placeholder="Email">
+                            <input type="password" class="input" placeholder="Password">
+                            <p class="page-link">
+                                <span class="page-link-label">Forgot Password?</span>
+                            </p>
+                            <button class="form-btn">Log in</button>
                         </form>
-                        <div class="bottom-link">
-                            Don't have an account
-                            <a href="#">Sign up</a>
-                        </div>
+                        <p class="sign-up-label">
+                            Don't have an account?<span class="sign-up-link"><a href="signup.html">Sign up</a></span>
+                        </p>
                     </div>
         </div>
     </div>
