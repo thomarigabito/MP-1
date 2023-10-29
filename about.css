@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mouse Memoir;
+}
+
+body::before {
+    position: fixed;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: beige;
+    z-index: -1;
+    opacity: .20;
+    background-image: url(img/vintage.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    margin: 0 auto;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 95%;
+}
+
+.navbar {
+    /* background-image: url(img/pexels-photo-3968175.jpeg); */
+    background-color: rgba(161, 135, 135, 0.4);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+    width: 60px;
+    padding: 0;
+}
+
+.nav-social {
+    margin-right: 1rem;
+}
+
+.nav-social a {
+    margin-right: .75rem;
+    font-size: 25px;
+    color: rgba(66, 59, 59, 0.784);
+}
+
+.nav-social a:hover {
+    color: rgba(255, 255, 255, 0.784);
+}
+
+.nav-item {
+    margin-right: 1rem;
+    border: 1px solid rgb(153, 148, 148);
+}
+
+.nav-link {
+    position: relative;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: aliceblue
+}
+
+.dropdown-menu {
+    background-color: rgba(161, 135, 135, 0.5);
+}
+
+
+
+
+
+
+
+/* <=======FOOTER=========> */
+
+footer {
+    /* background-color: #16697A; */
+    padding: 1rem;
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: .25fr 1fr .35fr;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social a {
+    margin-right: .75rem;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.784);
+}
+
+.social a:hover {
+    color: rgba(0, 0, 0, 0.784);
+}
+
+.footer-grid dd a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footer-grid dd a:hover {
+    color: black;
+    text-decoration: underline;
+
+}
+
+.footer-grid .logoimg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid dl dd {
+        display: none
+    }
+
+    .footer-grid dl dt:hover dd {
+        cursor: pointer;
+        display: block;
+    }
+
+    .social {
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social a {
+        font-size: 25px;
+        padding: 0 20px 0 20px
+    }
+}
+
+@media only screen and (max-width: 500px){
+    
+}
