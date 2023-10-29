@@ -181,6 +181,7 @@ hr{
     /* background-color: rgba(221, 222, 211, 0.293); */
     align-items: center;
     justify-content: center;
+    margin: 3rem 0 3rem;
 }
 .heading{
     display: inline;
@@ -354,8 +355,8 @@ footer{
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: .25fr 1fr .35fr;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 15rem);
+
 }
 .social{
     display: flex;
@@ -381,10 +382,8 @@ footer{
     text-decoration: underline;
     
 }
-.footer-grid .logoimg{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.logoimg{
+    display: block;
 }
 
 
