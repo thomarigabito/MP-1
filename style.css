@@ -232,7 +232,7 @@ hr{
     right: 0;
     background-color: rgba(245, 245, 220, 0.593);
     z-index: -1;
-    transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out ;
     transform: scaleX(0);
     /* transform-origin: left; */
 }
@@ -246,17 +246,12 @@ hr{
     background-color: rgba(150, 150, 138, 0.726);
     z-index: -1;
     transform: scaleX(1);
+    transition: transform 500ms ease-in-out;
 }
 .developer h1{
    font-size: 35px;
    font-weight: bold;
 }
-
-
-
-
-
-
 
 /* MODEL HOUSE */
 
@@ -355,22 +350,62 @@ footer{
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 15rem);
-
+    grid-template-columns: .25fr 1fr;
+    grid-gap:2rem;
+    align-items: center;
+    margin-left: 3rem;
 }
+.list{
+    gap: 2rem;
+    align-items: center;
+}
+.list a{
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    transition: transform 500ms ease-in-out; 
+}
+.list a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(85, 85, 65, 0.523); */
+    z-index: -1;
+    border-top:1px solid black;
+    border-bottom: 1px solid black;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+    transform-origin: left;
+}
+.list a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.list a:hover{
+    color: rgb(255, 164, 36);
+}
+.list a h2{
+    font-size: 20px;
+}
+
 .social{
     display: flex;
-
     justify-content: space-around;
     align-items: center;
+    gap:.95rem;
 }
 .social a{
     margin-right: .75rem;
-    font-size: 35px;
+    font-size: 23px;
     color: rgba(0, 0, 0, 0.784);
+    transition:  300ms ease-in-out;
 }
 .social a:hover {
-    color: rgba(0, 0, 0, 0.784);
+    color: rgb(255, 164, 36);
+    transition:  300ms ease-in-out;
 }
 
 .footer-grid dd a{
@@ -384,6 +419,10 @@ footer{
 }
 .logoimg{
     display: block;
+}
+.footer-grid .list{
+    display: flex;
+
 }
 
 

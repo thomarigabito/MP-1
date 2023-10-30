@@ -49,6 +49,7 @@ img{
     grid-gap: 1rem;
     text-align: center;
   }
+  
   .form {
   display: flex;
   flex-direction: column;
@@ -63,7 +64,7 @@ img{
 
 .title {
   font-size: 28px;
-  color: royalblue;
+  color: rgb(149, 134, 52);
   font-weight: 600;
   letter-spacing: -1px;
   position: relative;
@@ -85,7 +86,7 @@ img{
 .title::before {
   width: 18px;
   height: 18px;
-  background-color: royalblue;
+  background-color: rgb(235, 168, 67);
 }
 
 .title::after {
@@ -182,22 +183,23 @@ img{
     opacity: 0;
   }
 }
-    @media only screen and (max-width: 768px){
-    *{
-        margin: 10px
-    }
-    .grid-container{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .form-content-login{
-        height: fit-content;
-        border-radius: 0;
-        border: #717171 2px solid;
-        padding: 1rem;
-        width: 100%;
 
-    }
+  @media only screen and (max-width: 768px){
+  *{
+      margin: 10px
+  }
+  .grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .form-content-login{
+      height: fit-content;
+      border-radius: 0;
+      border: #717171 2px solid;
+      padding: 1rem;
+      width: 100%;
+
+  }
 
 }
 </style>
@@ -210,9 +212,9 @@ img{
           <p>Please log in using your personal account</p>
         </div>
 
-        <form class="form">
-          <p class="title">Register </p>
-          <p class="message">Signup now and get full access to our app. </p>
+        <form class="form" action="index.html">
+          <p class="title">Sign Up </p>
+          <p class="message">Sign up now and get full access. </p>
           <div class="flex">
             <label>
               <input class="input" type="text" placeholder="" required="">
@@ -238,7 +240,7 @@ img{
             <input class="input" type="password" placeholder="" required="">
             <span>Confirm password</span>
           </label>
-          <button class="submit">Submit</button>
+          <button class="submit">Sign in</button>
           <p class="signin">Already have an acount ? <a href="login.html">Log in</a> </p>
         </form>
 
