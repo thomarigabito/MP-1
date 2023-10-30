@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Mouse Memoir;
+    font-family: Gabarito;
 }
 body::before{
     position: fixed;
@@ -120,6 +120,8 @@ hr{
     border-radius: 20% 0 20% 0;
 }
 
+/* =======CAROUSEL========= */
+
 
 .cont-carousel {
     margin: 20px;
@@ -173,11 +175,11 @@ hr{
 }
 
 
-/* Developer */
+/*======== Developer ===========*/
 .dev-container{
     display: block;
     max-width: 100rem;
-    height: 80vh;
+    height: 75vh;
     /* background-color: rgba(221, 222, 211, 0.293); */
     align-items: center;
     justify-content: center;
@@ -186,8 +188,8 @@ hr{
 .heading{
     display: inline;
     padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 3rem;
+    padding-bottom: 3rem;
+    margin: 3rem 0 ;
 }
 .heading h1{
     text-align: center;
@@ -389,6 +391,7 @@ footer{
 }
 .list a h2{
     font-size: 20px;
+    font-family: Gabarito;
 }
 
 .social{
@@ -408,22 +411,11 @@ footer{
     transition:  300ms ease-in-out;
 }
 
-.footer-grid dd a{
-    color:rgb(0, 0, 0);
-    text-decoration: none;
-}
-.footer-grid dd a:hover{
-    color: black;
-    text-decoration: underline;
-    
-}
-.logoimg{
-    display: block;
-}
 .footer-grid .list{
     display: flex;
-
 }
+
+
 
 
 @media only screen and (max-width: 1080px){
@@ -461,24 +453,6 @@ footer{
         height: fit-content;
     }
 
-    .footer-grid dl dd{
-        display:none
-    }
-
-    .footer-grid dl dt:hover dd{
-        cursor: pointer;
-        display: block;
-    }
-    .social {
-        display: flex;
-        font-size: 25px;
-        justify-content: center;
-        align-items: center;
-    }
-    .social a{
-        font-size: 25px;
-        padding: 0 20px 0 20px
-    }
 
 
 }
