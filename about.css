@@ -303,19 +303,6 @@ footer {
         background-color: rgba(0, 0, 0, 1);
         z-index: -1;
     }
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-grid dl dd {
-        display: none
-    }
-
-    .footer-grid dl dt:hover dd {
-        cursor: pointer;
-        display: block;
-    }
-
     .social {
         display: flex;
         font-size: 25px;
@@ -331,5 +318,40 @@ footer {
 }
 
 @media only screen and (max-width: 500px){
-    
+    .about-grid p {
+        font-size: 15px;
+        padding: 1rem;
+        line-height: .95rem;
+        text-align:start;
+    }
+
+    .about-grid .mission::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 285px;
+        transform: translateY(-10px);
+        background-color: rgba(0, 0, 0, 1);
+        z-index: -1;
+    }
+
+    .about-grid .vision::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 270px;
+        transform: translateY(-10px);
+        background-color: rgba(0, 0, 0, 1);
+        z-index: -1;
+    }
+    .social a {
+        font-size: 25px;
+        padding: 0 10px 0 10px
+    }
 }

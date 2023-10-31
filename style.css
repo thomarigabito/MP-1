@@ -346,19 +346,24 @@ hr{
 
 
 footer{
-    /* background-color: #16697A; */
     padding:1rem;
     
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: .25fr 1fr;
+    grid-template-columns: .25fr .25fr 1fr;
+    grid-template-areas: 'logoimg social list';
     grid-gap:2rem;
     align-items: center;
     margin-left: 3rem;
 }
-.list{
-    gap: 2rem;
+.logoimg{
+    grid-area: logoimg;
+
+}
+/* .list{
+    grid-area: list;
+    gap: 1rem;
     align-items: center;
 }
 .list a{
@@ -374,7 +379,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    /* background-color: rgba(85, 85, 65, 0.523); */
+    background-color: rgba(85, 85, 65, 0.523);
     z-index: -1;
     border-top:1px solid black;
     border-bottom: 1px solid black;
@@ -392,11 +397,10 @@ footer{
 .list a h2{
     font-size: 20px;
     font-family: Gabarito;
-}
+} */
 
 .social{
-    display: flex;
-    justify-content: space-around;
+    grid-area: social;
     align-items: center;
     gap:.95rem;
 }
@@ -409,10 +413,6 @@ footer{
 .social a:hover {
     color: rgb(255, 164, 36);
     transition:  300ms ease-in-out;
-}
-
-.footer-grid .list{
-    display: flex;
 }
 
 
@@ -453,9 +453,9 @@ footer{
         height: fit-content;
     }
 
-
-
 }
+
+
 @media only screen and (max-width: 500px) {
     .container1{
         height: fit-content;
@@ -497,5 +497,4 @@ footer{
         font-size: 10px;
         color: #000000
     }
-
 }

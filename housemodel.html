@@ -260,6 +260,48 @@
                     </ul>
                 </div>
             </div>
+
+
+            <div class="menu2">
+                <div class="testbox">
+                    <form action="index.html">
+                        <p class="p" id="h1">Inquirie Form</p>
+                        <p class="p" id="h4">Name</p>
+                        <input placeholder="Enter your full name" type="text" class="input">
+                        <p class="p" id="h4">Email<span>*</span></p>
+                        <input placeholder="Enter your email" type="email" class="input">
+                        <p class="p" id="h4">House Model</p>
+                        <input placeholder="Enter your full name" type="text" class="input">
+                        <p class="p" id="h4">Date of Appointment<span>*</span></p>
+                        <input placeholder="Enter your email" type="date" class="input">
+                        <!-- <table>
+                            <tbody>
+                                <tr>
+                                    <th class="first-col"></th>
+                                    <th>Very Satisfied</th>
+                                    <th>Satisfied</th>
+                                    <th>Unsatisfied</th>
+                                    <th>Very Unsatisfied</th>
+                                </tr>
+                                <tr>
+                                    <td class="first-col">Professional</td>
+                                    <td><input name="point#2" value="none" type="radio"></td>
+                                    <td><input name="point#2" value="none" type="radio"></td>
+                                    <td><input name="point#2" value="none" type="radio"></td>
+                                    <td><input name="point#2" value="none" type="radio"></td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                        <p id="h4">Feel free to add any other comments or suggestions:</p>
+                        <textarea rows="5"></textarea>
+                        <div class="btn-block">
+                            <button href="/" type="submit">Send Inquiries</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
             <div class="mdl mdl1">
                     <div class="house-img">
                         <img class="" src="Model House/Amaia Escape/model1.jpg" alt="Card image"
@@ -421,34 +463,6 @@
                     <a href="#"><i class="fa-brands fa-google"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <div class="list">
-                    <a href="">
-                        <h2>Privacy</h2>
-                    </a>
-                    <a href="">
-                        <h2>Terms</h2>
-                    </a>
-                    <a href="">
-                        <h2>Pricing</h2>
-                    </a>
-                    <a href="">
-                        <h2>Developer</h2>
-                    </a>
-                    <a href="">
-                        <h2>House Model</h2>
-                    </a>
-                    <a href="">
-                        <h2>About us</h2>
-                    </a>
-                    <a href="">
-                        <h2>Inquire</h2>
-                    </a>
-                    <a href="">
-                        <h2>Contact</h2>
-                    </a>
-    
-    
-                </div>
             </div>
         </div>
     </footer>
@@ -466,6 +480,13 @@
             setTimeout(carousel, 5000); // Change image every 2 seconds
             }
      </script>
+     <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
 
 
