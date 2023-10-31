@@ -351,7 +351,7 @@ footer{
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: .25fr .25fr 1fr;
+    grid-template-columns: .25fr .25fr;
     grid-template-areas: 'logoimg social list';
     grid-gap:2rem;
     align-items: center;
@@ -361,7 +361,8 @@ footer{
     grid-area: logoimg;
 
 }
-/* .list{
+.list{
+    display: flex;
     grid-area: list;
     gap: 1rem;
     align-items: center;
@@ -372,6 +373,9 @@ footer{
     position: relative;
     transition: transform 500ms ease-in-out; 
 }
+.list a h1{
+    font-size: 20px;
+}
 .list a::before{
     content: '';
     position: absolute;
@@ -379,7 +383,6 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(85, 85, 65, 0.523);
     z-index: -1;
     border-top:1px solid black;
     border-bottom: 1px solid black;
@@ -397,9 +400,10 @@ footer{
 .list a h2{
     font-size: 20px;
     font-family: Gabarito;
-} */
+}
 
 .social{
+    display: flex;
     grid-area: social;
     align-items: center;
     gap:.95rem;
