@@ -346,12 +346,12 @@ hr{
 
 
 footer{
-    padding:1rem;
+    
     
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: .25fr .25fr;
+    grid-template-columns: 25% 25% 50%;
     grid-template-areas: 'logoimg social list';
     grid-gap:2rem;
     align-items: center;
@@ -500,5 +500,15 @@ footer{
         text-align: center;
         font-size: 10px;
         color: #000000
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'logoimg'
+                'social'
+                'list'
+                ;
+        grid-gap: 1rem;
+        /* align-items: center; */
     }
 }
