@@ -351,13 +351,17 @@ button:hover {
    font-weight: bold;
 }
 .read{
-    background-color: #ccc;
     align-items: center;
-}
-.read a{
     text-decoration: none;
-    color:black;
+    color: black;
+    transition: 300ms ease-in-out;
+    font-size: 25px;
+
 }
+.read:hover{
+    text-decoration: underline;
+}
+
 
 /* MODEL HOUSE */
 
