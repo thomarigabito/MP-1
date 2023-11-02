@@ -276,7 +276,6 @@ button:hover {
     display: block;
     max-width: 100rem;
     height: 75vh;
-    /* background-color: rgba(221, 222, 211, 0.293); */
     align-items: center;
     justify-content: center;
     margin: 3rem 0 3rem;
@@ -350,12 +349,22 @@ button:hover {
    font-size: 35px;
    font-weight: bold;
 }
+.readmore{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+}
 .read{
+    position: relative;
+    left: 50%;
+    
     align-items: center;
     text-decoration: none;
     color: black;
     transition: 300ms ease-in-out;
     font-size: 25px;
+    
 
 }
 .read:hover{
