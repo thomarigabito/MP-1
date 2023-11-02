@@ -345,21 +345,28 @@ button:hover {
 /* ========= FOOTER ========== */
 
 footer {
-    /* background-color: #16697A; */
-    padding: 1rem;
+    margin-bottom: 10px;
 
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: .25fr 1fr;
+    grid-template-columns: 30% 25% 50%;
+    grid-template-areas: 'logoimg social list';
     grid-gap: 2rem;
     align-items: center;
     margin-left: 3rem;
 }
 
+.logoimg {
+    grid-area: logoimg;
+
+}
+
 .list {
-    gap: 2rem;
+    display: flex;
+    grid-area: list;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -370,6 +377,10 @@ footer {
     transition: transform 500ms ease-in-out;
 }
 
+.list a h1 {
+    font-size: 20px;
+}
+
 .list a::before {
     content: '';
     position: absolute;
@@ -377,7 +388,6 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    /* background-color: rgba(85, 85, 65, 0.523); */
     z-index: -1;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -397,11 +407,12 @@ footer {
 
 .list a h2 {
     font-size: 20px;
+    font-family: Gabarito;
 }
 
 .social {
     display: flex;
-    justify-content: space-around;
+    grid-area: social;
     align-items: center;
     gap: .95rem;
 }
@@ -410,35 +421,27 @@ footer {
     margin-right: .75rem;
     font-size: 23px;
     color: rgba(0, 0, 0, 0.784);
+    transition: 300ms ease-in-out;
 }
 
 .social a:hover {
     color: rgb(255, 164, 36);
-}
-
-.footer-grid dd a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-.footer-grid dd a:hover {
-    color: black;
-    text-decoration: underline;
-
-}
-
-.logoimg {
-    display: block;
-}
-
-.footer-grid .list {
-    display: flex;
-
+    transition: 300ms ease-in-out;
 }
 
 
 
+@media only screen and (max-width: 1026px){
+    .menu h2{
+        font-size: 15px;
+        
+    }
+    .menu li {
+        font-size: 13px;
 
+    }
+
+}
 @media only screen and (max-width: 768px){
     .grid{
         grid-template-columns:1fr;
@@ -472,6 +475,9 @@ footer {
     .description{
         padding: 1rem;
     }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 
 }
 @media only screen and (max-width: 500px){
@@ -483,5 +489,25 @@ footer {
        display: block;
     }
 
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'logoimg'
+            'social'
+            'list'
+        ;
+        grid-gap: 1rem;
+        /* align-items: center; */
+    }
+}
 
+@media only screen and (max-width: 320px) {
+    .list {
+        gap: .5rem;
+
+    }
+
+    .list a h1 {
+        font-size: 15px;
+    }
 }
