@@ -356,9 +356,6 @@ button:hover {
     position: absolute;
 }
 .read{
-    position: relative;
-    left: 50%;
-    
     align-items: center;
     text-decoration: none;
     color: black;
