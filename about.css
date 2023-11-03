@@ -175,21 +175,26 @@ hr {
 /* <=======FOOTER=========> */
 
 footer {
-    /* background-color: #16697A; */
-    padding: 1rem;
-
+    margin-bottom: 10px;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: .25fr 1fr;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'logoimg social list';
+    grid-gap: 1rem;
     align-items: center;
     margin-left: 3rem;
 }
 
+.logoimg {
+    grid-area: logoimg;
+}
+
 .list {
-    gap: 2rem;
+    display: flex;
+    grid-area: list;
+    gap: 10px;
     align-items: center;
 }
 
@@ -200,6 +205,10 @@ footer {
     transition: transform 500ms ease-in-out;
 }
 
+.list a h1 {
+    font-size: 20px;
+}
+
 .list a::before {
     content: '';
     position: absolute;
@@ -207,7 +216,6 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    /* background-color: rgba(85, 85, 65, 0.523); */
     z-index: -1;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -232,7 +240,7 @@ footer {
 
 .social {
     display: flex;
-    justify-content: space-around;
+    grid-area: social;
     align-items: center;
     gap: .95rem;
 }
@@ -249,25 +257,9 @@ footer {
     transition: 300ms ease-in-out;
 }
 
-.footer-grid dd a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
 
-.footer-grid dd a:hover {
-    color: black;
-    text-decoration: underline;
 
-}
 
-.logoimg {
-    display: block;
-}
-
-.footer-grid .list {
-    display: flex;
-
-}
 @media only screen and (max-width: 1024px){
     .about-grid p{
     font-size: 20px;
@@ -316,10 +308,20 @@ footer {
         font-size: 25px;
         padding: 0 20px 0 20px
     }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'logoimg social list';
+        grid-gap: 1rem;
+        align-items: center;
+    }
+    .logoimg span{
+        font-size: 18px;
+    }
         
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 679px){
     .about-grid p {
         font-size: 15px;
         padding: 1rem;
@@ -355,5 +357,29 @@ footer {
     .social a {
         font-size: 25px;
         padding: 0 10px 0 10px
+    }
+    .footer-grid {
+        margin: 0;
+        display: grid;
+        grid-template-columns: .95fr;
+        grid-template-areas:
+            'logoimg'
+            'list'
+            'social';
+        /* align-items: center; */
+    }
+    .list a h1 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .footer-grid {
+            margin: 0;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'logoimg'
+                'list'
+                'social';
+            grid-gap: .5rem;
     }
 }

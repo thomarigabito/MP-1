@@ -79,7 +79,7 @@ hr {
 }
 
 .dropdown-menu {
-    background-color: rgba(161, 135, 135, 0.5);
+    background-color: rgba(161, 135, 135, .9);
 }
 
 
@@ -351,7 +351,7 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 30% 25% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'logoimg social list';
     grid-gap: 2rem;
     align-items: center;

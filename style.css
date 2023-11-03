@@ -121,13 +121,7 @@ button:hover {
     opacity: .9;
 }
 
-@media (min-width: 568px) {
 
-    th,
-    td {
-        word-break: keep-all;
-    }
-}
 
 .navbar{
     /* background-image: url(img/pexels-photo-3968175.jpeg); */
@@ -138,7 +132,6 @@ button:hover {
     top: 0;
     z-index: 10;
     padding: 0;
-    margin: 0;
 }
 .navbar-brand{
     margin-left: 1rem;
@@ -462,14 +455,13 @@ button:hover {
 
 
 footer{
-   margin-bottom: 10px; 
-    
+   margin-bottom: 10px;   
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: 30% 25% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'logoimg social list';
-    grid-gap:2rem;
+    grid-gap:1rem;
     align-items: center;
     margin-left: 3rem;
 }
@@ -478,9 +470,9 @@ footer{
 
 }
 .list{
-    display: flex;
+    display:flex;
     grid-area: list;
-    gap: 1rem;
+    gap: 10px;
     align-items: center;
 }
 .list a{
@@ -546,10 +538,14 @@ footer{
 @media only screen and (max-width: 1024px){
     .footer-grid {
         display: grid;
-        grid-template-columns: 30% 25% 40%;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'logoimg social list';
         grid-gap: 1rem;
         align-items: center;
+    }
+    .read {
+        left: 47%;
+        font-size: 20px;
     }
 }
 
@@ -581,13 +577,22 @@ footer{
     .dev-container{
         height: fit-content;
     }
+    .read {
+        left: 45%;
+        font-size: 20px;
+    }
+    .container1{
+        margin-top: 7rem;
+    }
 
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 679px) {
     .container1{
         height: fit-content;
+        margin-top: 2rem;
+
     }
     .cont-carousel{
         height: fit-content;
@@ -603,6 +608,10 @@ footer{
     .grid-dev-logo {
        grid-template-columns: 1fr;
        margin: 0;
+    }
+    .read {
+        left: 35%;
+        font-size: 20px;
     }
     .model-grid {
         grid-template-columns: 1fr;
@@ -627,17 +636,22 @@ footer{
         color: #000000
     }
     .footer-grid {
+        margin: 0;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'logoimg'
-                'social'
+        grid-template-columns: .95fr;
+        grid-template-areas: 
+                'logoimg'
                 'list'
-                ;
-        grid-gap: 1rem;
+                'social';
         /* align-items: center; */
     }
+    .list a h1{
+        font-size: 18px;
+    }
+        
 }
 @media only screen and (max-width: 320px){
+    .nav
     .list{
         gap: .5rem;
 
@@ -645,4 +659,24 @@ footer{
     .list a h1{
         font-size: 15px;
     }
+    .read{
+    left: 30%;
+    font-size: 20px;
+    }
+    .footer-grid {
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                    'logoimg'
+                    'list'
+                    'social';
+        grid-gap: .5rem;
+    }
+    .list {
+    display: flex;
+    grid-area: list;
+    gap: .5rem;
+    align-items: center;
+    }
+   
 }
