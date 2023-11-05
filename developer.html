@@ -108,6 +108,7 @@
         align-items: center;
         margin-left: 3rem;
     }
+
     .logoimg{
         grid-area: logoimg;
 
@@ -170,31 +171,115 @@
         transition:  300ms ease-in-out;
     }
 
-    .advisory-grid{
-        margin-top: 1rem;
+
+/*=======Calmar Land=========*/
+    .calmar-grid{
+        margin: 1rem 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 33.33% 33.33% 33.33% ;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-                    ' . ads  .'
-                    'pagibig . .';
+                'calmar calmar'
+                'calmar1 logo'
+                'calmar2 calmar2'
+                ; 
+                
 
         justify-content: center;
         align-items: center;  
-        height: 100vh; 
+    }
+    .calmar{
+        grid-area: calmar;
+    }
+    .calmar-logo{
+        grid-area: logo;
+        margin: 0 auto;   
+    }
+    .calmar-logo img{
+        height: 110px;
+    }
+    .calmar1{
+        grid-area: calmar1;
+        text-align: justify;
+        font-size: 17px;
+    }
+    .calmar2{
+        grid-area: calmar2;
+        text-align: justify;
+        font-size: 17px;
+        border-bottom: 1px solid;
     }
 
-    .ads{
-        grid-area: ads;
-        align-items: center;
+    .apec-grid{
+        display: grid;
+        margin: 1rem 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+                'apec apec'
+                'apec1 logo'
+                'apec2 apec2';
+        grid-column-gap: .85rem;
+    }
+    .apec{
+        grid-area: apec;
+    }
+    .apec-logo{
         justify-content: center;
-        margin: 0 auto;
-
+        grid-area: logo;
+        margin: auto;
     }
-    .pagibig{
-        grid-area: pagibig;
-
+    .apec-logo img{
+        width: 500px;
     }
+    .apec1{
+        grid-area: apec1;
+        text-align: justify;
+        font-size: 17px;
+    }
+    .apec2{
+        grid-area: apec2;
+        text-align: justify;
+        font-size: 17px;
+        border-bottom: 1px solid black;
+    }
+
+    /* ========CRDC======= */
+    .crdc-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+                'crdc crdc'
+                'crdc1 logo'
+                'crdc2 crdc2'
+                ;
+    }
+    .crdc{
+        grid-area: crdc;
+    }
+    .crdc-logo{
+        grid-area: logo;
+        margin: auto;
+    }
+    .crdc-logo img{
+        height: 70px;
+    }
+
+    .crdc1{
+        grid-area: crdc1;
+        text-align: justify;
+        font-size: 17px;
+    }
+    .crdc2{
+        grid-area: crdc2;
+        text-align: justify;
+        font-size: 17px;
+        border-bottom: 1px solid black;
+    }
+
+
+
+
+
+
 
 
 
@@ -208,14 +293,74 @@
         grid-gap: 1rem;
         align-items: center;
     }
+    .calmar-logo{
+        grid-area: logo;
+        margin: auto;   
+    }
+    .apec-logo{
+        margin: auto;
+    }
+    .crdc-logo{
+        grid-area: logo;
+        margin: auto;
+    }
 }
     @media only screen and (max-width: 768px){
+    .carousel-inner{
+    height:600px;
+    object-fit: cover;
+    } 
         
-    }
+}
     
     @media only screen and (max-width: 679px){
-            
-       
+    .calmar-grid{
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                'calmar'
+                'calmar1' 
+                'logo'
+                'calmar2'
+                ; 
+                
+
+        justify-content: center;
+        align-items: center;  
+        grid-row-gap: .95rem;
+    }
+    .calmar-logo{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;  
+    }
+
+    .apec-grid{
+        display: grid;
+        margin: 1rem 0;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                'apec'
+                'apec1' 
+                'logo'
+                'apec2';
+        grid-row-gap: .95rem;
+    }
+
+    .crdc-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                'crdc'
+                'crdc1' 
+                'logo'
+                'crdc2';
+        grid-row: .95rem;
+    }
+
+
+
+
     .footer-grid {
         display: grid;
         grid-template-columns: .95fr;
@@ -223,8 +368,8 @@
                 'logoimg'
                 'list'
                 'social';
-        /* align-items: center; */
     }
+
 } 
     @media only screen and (max-width: 320px){
         .footer-grid {
@@ -241,6 +386,11 @@
     grid-area: list;
     gap: .5rem;
     align-items: center;
+    }
+    .carousel-item{
+        height:500px ;
+        object-fit:contain;
+
     }
 }
     </style>
@@ -270,64 +420,87 @@
                     <a class="nav-link" href="signup.html">Sign Up</a>
                 </li>
             </ul>
+            <div class="nav-social">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="login.html" data-bs-toggle="tooltip" title="Login"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
         </div>
-        <div class="nav-social">
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="login.html" data-bs-toggle="tooltip" title="Login"><i class="fa-solid fa-right-to-bracket"></i></a>
-        </div>
+        
     </nav>
 
-    <div class="carousel">
-        <div id="advisory" class="carousel slide" data-bs-ride="carousel">
-        
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#advisory" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#advisory" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#advisory" data-bs-slide-to="2"></button>
-            </div>
-        
-           
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="Model House/Calmar Homes/website-BUYERS-KICK-OFF-PROMO.jpg" alt="Los Angeles" class="d-block" style="width:100%; height: 685px">
-                </div>
-                <div class="carousel-item">
-                    <img src="Model House/Calmar Homes/website-SONRISA-SAN-PABLO.jpg" alt="Chicago" class="d-block" style="width:100%; height: 685px">
-                </div>
-                <div class="carousel-item">
-                    <img src="Model House/ApecHomes/AH-Contractors-Web-Banner-scaled.jpg" alt="New York" class="d-block" style="width:100%; height: 685px ">
-                </div>
-            </div>
-        
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#advisory" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#advisory" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-
-    </div>
 
 
 
 
     <div class="container">
-        <div class="advisory-grid">
-
-            <div class="ads"><h1 >Advisory</h1></div>
-            <div class="pagibig">
-                <img src="img/Pag-IBIG-Housing-Loan-273c-wo-tagline-620x468.png">
+        <div class="calmar-grid">
+            <div class="calmar">
+                <h1>Calmar Land</h1>
             </div>
-            
-
+            <div class="calmar1">
+                <p>Standing the test of time, Calmar Land has proven itself to be a strong and flexible company, demonstrating its ability
+                to navigate the ups and downs of the ever-changing real estate industry landscape. To adapt, Calmar Land engages its
+                employees with the necessary knowledge to enhance and develop their professional skills to their full potential. It also
+                constantly evolves its cores through various innovations, advancements, and upgrades to allow the company to conform to
+                the current trends, technologies, and ways of life in modern times.</p>
+            </div>
+            <div class="calmar2"><p>What defines Calmar Land legacy is its extraordinary ability to infuse stories into every home they build. Within the
+            embrace of their meticulously designed and well-planned neighborhoods, their constructed homes have transformed into
+            sanctuaries of stories and memories, embodying the true Filipino spirit. They stand as a testament to the enduring
+            values of hope, love, camaraderie, a sense of belongingness, connection, and acceptance, honing with a firm belief in
+            the limitless potential of every Filipino to achieve their dreams.</p></div>
+            <div class="calmar-logo"> <img  src="Model House/Calmar Homes/Calmar-Land.png" alt=""></div>
         </div>
+
+        <div class="apec-grid">
+            <div class="apec"><h1>APEC HOMES</h1></div>
+            <div class="apec1">
+                <p>Hangad namin sa APEC Homes na makapagtayo ng dekalidad at abot-kayang tahanan para sa bawat masisipag na Pilipino. Sa
+                loob ng dalawang dekada, nakatuon ang aming atensyon sa pag-abot sa pangarapna ito. Mula ng itatag ang APEC Homes noong
+                1997 at makapagtayo kami ng mahigit 50,000 housing units, hindi kami tumitigil sa ang aming misyon bilang isang CREDIBLE
+                at STABLE na subdivision developer sa Pilipinas ang makapagbigay ng subok-sa-tibay na tahanan, sa abot-kayang halaga.</p>
+            </div>
+            <div class="apec-logo"><img src="img/apec.png" alt="apec"></div>
+            <div class="apec2">
+                <p>Ang makapaghatid ng abot-kayang bahay patungo sa mapayapang komunidad ang aming buong-pusong handog. Kaya naman,
+                masigasig na nakasentro ang aming operasyon sa paggawa ng matitibay at matatatag na tahanan – tahanang pundasyon din ng
+                matibay at matatag na pamilyang Pilipino. Dahil alam namin na pangarap ng bawat-isa na tumira sa ligtas, maginhawa at komportableng tahanan, ipinagpapatuloy at
+                sinisiguro ng APEC Homes na ang bawat hakbang namin ay naka-angkla sa pagtupad ng mga pangarap na ito.</p>
+            </div>
+        </div>
+
+        <div class="crdc-grid">
+            <div class="crdc">
+                <h1>CRDC</h1>
+            </div>
+            <div class="crdc-logo"> <img src="img/CRDClogo.png" alt="CRDC"></div>
+            <div class="crdc1">
+                <p>We, the Cotta Realty & Development Corporation, a company providing quality subdivisions, working for a common goal thru
+                commitment and reliable service.
+                
+                We build projects envisioned having the best home and environment with excellent facilities and distinct amenities for
+                the community that we create.
+                
+                </p>
+            </div>
+            <div class="crdc2">
+                <p>The efficient teamwork and communication of management, employees and agents allow us to grow and venture to different
+                land development projects.
+                
+                As a result, we contribute to the society by granting a source of income to our company, employees, sales agents, and
+                workers.
+                
+                Employing utmost professionalism towards our peers and competitors
+                
+                With the divine assistance of the Almighty God</p>
+            </div>
+        </div>
+
     </div>
 
-    <footer>
+    <footer class="container">
         <div class="container-fluid" style="display: flex;">
             <div class="footer-grid">
                 <div classs="logoimg">
