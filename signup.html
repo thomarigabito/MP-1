@@ -57,6 +57,10 @@ img{
     grid-gap: 1rem;
     text-align: center;
   }
+
+.form-details{
+  margin: auto;
+}
   
   .form {
   display: flex;
@@ -64,7 +68,7 @@ img{
   gap: 10px;
   max-width: 350px;
   background-color: #fff;
-  padding: 30px;
+  padding: 15px;
   border-radius: 20px;
   position: relative;
   border: 1px solid;
@@ -166,7 +170,7 @@ img{
 .submit {
   border: none;
   outline: none;
-  background-color: royalblue;
+  background-color: teal;
   padding: 10px;
   border-radius: 10px;
   color: #fff;
@@ -219,37 +223,39 @@ img{
           <p>Please log in using your personal account</p>
         </div>
 
-        <form class="form" action="login.html">
-          <p class="title">Sign Up </p>
-          <p class="message">Sign up now and get full access. </p>
-          <div class="flex">
+        <div style="margin: auto;">
+          <form class="form" action="login.html">
+            <p class="title">Sign Up </p>
+            <p class="message">Sign up now and get full access. </p>
+            <div class="flex">
+              <label>
+                <input class="input" type="text" placeholder="" required="">
+                <span>Firstname</span>
+              </label>
+          
+              <label>
+                <input class="input" type="text" placeholder="" required="">
+                <span>Lastname</span>
+              </label>
+            </div>
+          
             <label>
-              <input class="input" type="text" placeholder="" required="">
-              <span>Firstname</span>
+              <input class="input" type="email" placeholder="" required="">
+              <span>Email</span>
             </label>
-        
+          
             <label>
-              <input class="input" type="text" placeholder="" required="">
-              <span>Lastname</span>
+              <input class="input" type="password" placeholder="" required="">
+              <span>Password</span>
             </label>
-          </div>
-        
-          <label>
-            <input class="input" type="email" placeholder="" required="">
-            <span>Email</span>
-          </label>
-        
-          <label>
-            <input class="input" type="password" placeholder="" required="">
-            <span>Password</span>
-          </label>
-          <label>
-            <input class="input" type="password" placeholder="" required="">
-            <span>Confirm password</span>
-          </label>
-          <button class="submit">Sign in</button>
-          <p class="signin">Already have an acount ? <a href="login.html">Log in</a> </p>
-        </form>
+            <label>
+              <input class="input" type="password" placeholder="" required="">
+              <span>Confirm password</span>
+            </label>
+            <button class="submit">Sign in</button>
+            <p class="signin">Already have an acount ? <a href="login.html">Log in</a> </p>
+          </form>
+        </div>
 
     </div>
 </div>
