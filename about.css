@@ -88,6 +88,47 @@ hr {
 
 .about-grid{
     display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 20% 40% 20% 40%;
+    grid-template-areas:
+            'msn'
+            'msn1'
+            'vsn'
+            'vsn1' ;
+    
+}
+.msn{
+    grid-area: msn;
+    margin: auto;
+}
+.msn1 {
+    grid-area: msn1;
+}
+.msn1 p{
+    text-align: center;
+    font-size: 22px;
+    padding: 2rem 0;
+    line-height: 2rem;
+    
+}
+.vsn{
+    grid-area: vsn;
+    margin: auto;
+}
+.vsn1{
+    grid-area: vsn1;
+}
+.vsn1 p{
+    text-align: center;
+    font-size: 22px;
+    padding: 2rem 0;
+}
+
+
+
+
+/* .about-grid{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
@@ -161,7 +202,7 @@ hr {
     justify-content: center;
     margin: 0 auto;
     display: inline;
-}
+} */
 
 
 
@@ -315,48 +356,34 @@ footer {
     .logoimg span{
         font-size: 18px;
     }
+
+        
+    
+    
+        .msn1 p {
+            text-align: center;
+            font-size: 25px;
+            padding: 2rem 0;
+            line-height: 1.75rem;
+    
+        }
+    
+        .vsn1 p {
+            text-align: center;
+            font-size: 25px;
+            padding: 2.25rem 0;
+            line-height: 1.75rem;
+        }
         
 }
 
 @media only screen and (max-width: 679px){
-    .about-grid p {
-        font-size: 15px;
-        padding: 1rem;
-        line-height: .95rem;
-        text-align:start;
-    }
-
-    .about-grid .mission::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 285px;
-        transform: translateY(-10px);
-        background-color: rgba(0, 0, 0, 1);
-        z-index: -1;
-    }
-
-    .about-grid .vision::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 270px;
-        transform: translateY(-10px);
-        background-color: rgba(0, 0, 0, 1);
-        z-index: -1;
-    }
     .social a {
         font-size: 25px;
         padding: 0 10px 0 10px
     }
     .footer-grid {
-        margin: 0;
+        margin: auto;
         display: grid;
         grid-template-columns: .95fr;
         grid-template-areas:
@@ -371,50 +398,25 @@ footer {
 }
 
 @media only screen and (max-width: 426px){
-    .about-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'missions'
-            'mission'
-            'visions'
-            'vision';
-        height: fit-content;
-    }
-    
-    .about-grid .mission::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 160px;
-        transform: translateY(-10px);
-        background-color: rgba(0, 0, 0, 1);
-        z-index: -1;
+    .msn1 p {
+        text-align: center;
+        font-size: 16px;
+        padding: 0;
+        line-height: 1.30rem;
+
     }
 
-    .about-grid .vision::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 150px;
-        transform: translateY(-10px);
-        background-color: rgba(0, 0, 0, 1);
-        z-index: -1;
-    }
-    .footer-grid{
-        margin-top: 2rem;
+    .vsn1 p {
+        text-align: center;
+        font-size: 16px;
+        padding: 0;
+        line-height: 1.30rem;
     }
 }
 
 
 @media only screen and (max-width: 321px){
-    .about-grid {
+    /* .about-grid {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-areas:
@@ -422,7 +424,7 @@ footer {
              'mission'
             'visions'
              'vision';
-    }
+    } */
     .about-grid .mission::before {
         content: '';
         position: absolute;
@@ -447,9 +449,23 @@ footer {
         background-color: rgba(0, 0, 0, 1);
         z-index: -1;
     }
+        .msn1 p {
+            text-align: center;
+            font-size: 13px;
+            padding: 0;
+            line-height: 1.25rem;
+    
+        }
+    
+        .vsn1 p {
+            text-align: center;
+            font-size: 13px;
+            padding: 0;
+            line-height: 1.25rem;
+        }
 
     .footer-grid {
-            margin: 0;
+            margin: auto;
             grid-template-columns: 1fr;
             grid-template-areas:
                 'logoimg'
