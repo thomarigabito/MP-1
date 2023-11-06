@@ -124,7 +124,6 @@ button:hover {
 
 
 .navbar{
-    /* background-image: url(img/pexels-photo-3968175.jpeg); */
     background-color: rgba(161, 135, 135, 0.4);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
@@ -342,26 +341,8 @@ button:hover {
    font-size: 35px;
    font-weight: bold;
 }
-.readmore{
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    position: absolute;
-}
-.read{
-    position: relative;
-    left: 50%;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    transition: 300ms ease-in-out;
-    font-size: 25px;
-    
 
-}
-.read:hover{
-    text-decoration: underline;
-}
+
 
 
 .modal{
@@ -639,7 +620,7 @@ footer{
         color: #000000
     }
     .footer-grid {
-        margin: 0;
+        margin: auto;
         display: grid;
         grid-template-columns: .95fr;
         grid-template-areas: 
@@ -667,7 +648,7 @@ footer{
     font-size: 20px;
     }
     .footer-grid {
-        margin: 0;
+        margin: auto;
         grid-template-columns: 1fr;
         grid-template-areas: 
                     'logoimg'

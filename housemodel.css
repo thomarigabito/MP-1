@@ -175,13 +175,6 @@ button:hover {
     opacity: .9;
 }
 
-@media (min-width: 568px) {
-
-    th,
-    td {
-        word-break: keep-all;
-    }
-}
 
 
 
@@ -447,7 +440,6 @@ footer {
         grid-template-columns:1fr;
         grid-template-rows: repeat(5,);
         grid-template-areas:
-            /* 'menu menu menu' */
             'mdl1 mdl1 md1'
             'mdl2 mdl2 mdl2'
             'mdl3 mdl3 mdl3'
@@ -490,14 +482,14 @@ footer {
     }
 
     .footer-grid {
+        margin:auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 'logoimg'
-            'social'
+        grid-template-areas: 
+            'logoimg'
             'list'
-        ;
+            'social';
         grid-gap: 1rem;
-        /* align-items: center; */
     }
 }
 
@@ -506,7 +498,6 @@ footer {
         gap: .5rem;
 
     }
-
     .list a h1 {
         font-size: 15px;
     }
