@@ -274,7 +274,97 @@
         font-size: 17px;
         border-bottom: 1px solid black;
     }
+    
+    form,
+.p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 13px;
+    border-radius: 10px;
+}
 
+#h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#h4 {
+    margin: 20px 0 2px;
+    color: #000;
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    background: #EBEBE1;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    vertical-align: middle;
+    background-color: #F7F7F7;
+}
+
+.input:hover,
+textarea:hover {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.first-name {
+    margin-bottom: 5px;
+}
+
+
+
+.first-col {
+    width: 16%;
+    text-align: left;
+}
+
+textarea {
+    width: calc(100% - 6px);
+    background: #F7F7F7;
+    border-radius: 5px;
+}
+
+.btn-block {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #F3D153;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
+}
 
 
 
@@ -430,7 +520,41 @@
         
     </nav>
 
+<div class="modal fade" id="myIquire">
+    <div class="modal-dialog">
+        <div class="modal-content">
 
+            <div class="modal-header">
+                <h4 class="modal-title">Inquiries</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form action="inquirie.html">
+                    <p class="p" id="h1">Inquirie Form</p>
+                    <p class="p" id="h4">Name</p>
+                    <input placeholder="Enter your full name" type="text" class="input" required>
+                    <p class="p" id="h4">Contact Number</p>
+                    <input placeholder="Enter your phonenumber" type="text" class="input" required>
+                    <p class="p" id="h4">Email<span>*</span></p>
+                    <input placeholder="Enter your email" type="email" class="input" required>
+                    <p class="p" id="h4">House Model</p>
+                    <input placeholder="Enter your full name" type="text" class="input" required>
+                    <p class="p" id="h4">Date of Appointment<span>*</span></p>
+                    <input placeholder="Enter your email" type="date" class="input" required>
+                    <p id="h4">Feel free to add any other comments or suggestions:</p>
+                    <textarea rows="5"></textarea>
+                    <div class="btn-block">
+                        <button href="/" type="submit">Send Inquiries</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>Thank You for Inquiring</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
